@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'lazyPrinces')
-API_ID = int(environ.get('API_ID', '20854013'))
-API_HASH = environ.get('API_HASH', '1c19d83f90348584587bcb0ba7c5d38383')
-BOT_TOKEN = environ.get('BOT_TOKEN', "581845604:BBFU9Yx2LRhw1m8usazVWTYIBE0kfn7wVCY")
+API_ID = int(environ.get('API_ID', '22125271'))
+API_HASH = environ.get('API_HASH', 'ee54ed0f27ef14430e653aa620b5e828')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7825304144:AAHoL-LiXNYlBKpOpfk1nFt__HGVCU01jGE")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -35,12 +35,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://username:<password>@cluster0.kpvaf5q.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rajhamraj45:<db_password>@hemraj.fygnq.mongodb.net/?retryWrites=true&w=majority&appName=hemraj")
+DATABASE_NAME = environ.get('DATABASE_NAME', "hemraj")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001835997345'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002423117797'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyPrincessSupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), False)
